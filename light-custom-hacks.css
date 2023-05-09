@@ -1,0 +1,89 @@
+/* append to [vscode]/resources/app/out/bootstrap-window.js
+let e = document.querySelector('head');
+e.innerHTML += '<link rel="stylesheet" href="file:///C:/Users/asseri/.vscode/extensions/asseri.theme-0.0.1/light-custom-hacks.css"></link>';
+*/
+
+.monaco-editor .margin {
+  --border-right: 1px solid #e2e2e2 !important;
+  box-shadow: -4px 0px 14px -10px black inset;
+  --width: 49px !important;
+  --width: 38px !important;
+  --z-index: 1;
+}
+
+.monaco-editor .editor-scrollable {
+  --left: 52px !important;
+}
+
+.monaco-editor .cldr.folding {
+  --left: 18px;
+}
+
+.monaco-editor .cldr.dirty-diff-modified,
+.monaco-editor .cldr.dirty-diff-added {
+  --left: 30px !important;
+}
+
+.part.titlebar {
+  --height: 19px !important;
+}
+
+.tabs-container {
+  --background-color: rgb(44, 44, 44);
+}
+
+.detected-link,
+.detected-link-active {
+  --text-decoration: none !important;
+}
+
+div.tabs-breadcrumbs {
+  font-size: 12px;
+  height: 22px;
+}
+
+div.tab {
+  background-color: aqua !important;
+}
+
+div.monaco-breadcrumbs {
+  background-color: #fafafa;
+  height: 21px !important;
+}
+
+div.monaco-breadcrumbs .monaco-breadcrumb-item:not(:nth-child(2)):before {
+  opacity: 0.4;
+  background-position: 50% 50%;
+}
+
+.monaco-breadcrumbs div.monaco-breadcrumb-item {
+  color: #000;
+}
+
+div.file.monaco-breadcrumb-item {
+  color: rgba(0, 0, 255, 0.8);
+}
+
+div.folder.monaco-breadcrumb-item {
+  color: rgba(160, 80, 0, 0.8);
+}
+
+div.scroll-decoration {
+  visibility: hidden !important;
+}
+
+div.scrollbar.vertical.fade {
+}
+
+div.scrollbar.vertical.invisible {
+  opacity: 1;
+}
+
+div.scrollbar.vertical::after {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, 0.1);
+}

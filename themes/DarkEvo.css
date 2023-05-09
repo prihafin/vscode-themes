@@ -1,0 +1,33 @@
+._mtk20 {
+  text-shadow: 0 0 1px #00ff3b, 0 0 2px #00ff08;
+}
+
+.mtk3 {
+  font-weight: 200;
+}
+
+.mtk5 {
+  text-shadow: 0 0 3px #0800ff7d, 0 0 4px #0025ffb0;
+}
+
+.mtk6 { /* keyword */
+  --text-shadow: 0 0 4px #0004ff, 0 0 7px #1000ff;
+}
+
+.mtk7 { /* boolean true */
+  font-weight: 200;
+  text-shadow: 0 0 3px #00ff24a6, 0 0 5px #00ff0080;
+}
+
+.mtk8 { /* boolean false */
+  font-weight: 200;
+  text-shadow: 0 0 4px #f00, 0 0 2px #f00;
+}
+
+.mtk12 { /* punctuation */
+  font-weight: 100;
+}
+
+.mtk14 { /* class */
+  text-shadow: 0 0 4px #0004ff, 0 0 7px #1000ff;
+}

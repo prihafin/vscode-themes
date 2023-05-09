@@ -1,0 +1,13 @@
+{
+	"name": "Asseri Experimental Light",
+	"settings": [
+		{
+			"settings": {
+				"fontStyle": "normal",
+				"foreground": "#000000d0",
+				"background": "#fdfcfb",
+				"selectionHighlight":"#a0a0ff"
+			}
+    }
+  ]
+}

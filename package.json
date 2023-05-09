@@ -1,0 +1,73 @@
+{
+	"name": "custom-themes",
+	"displayName": "Asseri Custom Themes",
+	"description": "Custom stuff",
+	"version": "0.0.2",
+	"publisher": "asseri",
+	"scripts": {
+		"build": "vsce package",
+		"watch": "nodemon ."
+	},
+	"engines": {
+		"vscode": "^1.17.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"icon": "images/vs-32-dev.ico",
+	"repository": {
+  	"type": "git",
+	  "url": ""
+	},
+	"nodemonConfig": {
+		"ext": "css,json",
+		"execMap": {
+		},
+		"events": {
+			"restart": "vsce package"
+		}
+	},
+	"contributes": {
+		"themes": [
+			{
+				"id":"Asseri Light",
+				"label": "Asseri Light",
+				"uiTheme": "vs",
+				"path": "./themes/light.json"
+			},
+			{
+				"id":"AsseriCobaltEvo",
+				"label": "Cobalt Evo",
+				"uiTheme": "vs-dark",
+				"path": "./themes/CobaltEvo.json"
+			},
+			{
+				"id":"AsseriEnhancedMaterialEvo",
+				"label": "Enhanced Material Evo",
+				"uiTheme": "vs-dark",
+				"path": "./themes/EnchancedMaterialEvo.json"
+			},
+			{
+				"id":"AsseriEnhancedSlateEvo",
+				"label": "Slate Evo",
+				"uiTheme": "vs-dark",
+				"path": "./themes/SlateEvo.json"
+			},
+			{
+				"id":"AsseriDarkEvo",
+				"label": "Dark Evo",
+				"uiTheme": "vs-dark",
+				"path": "./themes/DarkEvo.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "",
+		"publisherId": "",
+		"publisherDisplayName": "Asseri Lintanen",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false
+	}
+}

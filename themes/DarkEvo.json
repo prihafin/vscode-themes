@@ -10,14 +10,23 @@
       "foreground":"#76f"
     },
 		"interface": {
-      "fontStyle": "bold italic",
+      "fontStyle": "italic",
       "foreground":"#76f"
     },
 
-		"_parameter": {
-			"fontStyle": "italic",
-			"foreground": "#cdcdcd"
-		}
+		"parameter": {
+			"fontStyle": "",
+			"foreground": "#b5c9ff"
+		},
+
+		"plainKeyword": {
+			"fontStyle": "",
+			"foreground": "#0081cc"
+		},
+
+    "variable.defaultLibrary": {
+			"foreground": "#577f96"
+    }
   },
 
 	"tokenColors": [
@@ -28,7 +37,8 @@
         "support.type.property-name",
         "punctuation.support.type.property-name",
         "meta.template.expression",
-        "expression.ng"
+        "expression.ng",
+        "punctuation.definition.list.begin.markdown"
       ],
 			"settings": {
         "fontStyle": "",
@@ -40,7 +50,8 @@
 			"scope": [
         "comment",
         "punctuation.definition.comment",
-        "punctuation.definition.tag"
+        "punctuation.definition.tag",
+        "constant.character.escape.line-continuation.shell"
       ],
 			"settings": {
 				"fontStyle": "",
@@ -50,27 +61,66 @@
 		{
 			"name": "keyword",
 			"scope": [
+        "keyword.control.as",
+        "keyword.control.try",
+        "keyword.control.trycatch",
+        "keyword.control.export",
+        "keyword.control.flow",
+        "keyword.control.import",
         "keyword.control.conditional",
         "keyword.control.loop",
-        "keyword.control.flow",
+        "keyword.control.from",
+        "keyword.control.default",
         "storage.modifier",
         "keyword.type",
         "keyword.other",
         "storage.type",
         "keyword.operator.new",
         "keyword.operator.expression",
-        "constant.language",
         "support.function.builtin",
         "support.type.primitive",
+        "support.type.builtin",
         "variable.language.this",
         "variable.language.super",
         "keyword.operator.logical.python",
         "variable.language.special.self.python",
         "variable.parameter.function.language.special.self.python",
-        "entity.name.tag.html"
+        "entity.name.tag.html",
+        "keyword.control.powershell",
       ],
 			"settings": {
-				"foreground": "#3370cb"
+        "foreground": "#0081cc"
+			}
+		},
+		{
+			"name": "builtins",
+			"scope": [
+        "constant.language",
+        "support.variable.automatic.powershell",
+      ],
+			"settings": {
+        "foreground": "#00629b",
+        "fontStyle": ""
+			}
+		},
+		{
+			"name": "throw",
+			"scope": [
+        "keyword.control.throw"
+      ],
+			"settings": {
+        "foreground": "#cc0000",
+        "fontStyle": "bold italic"
+			}
+		},
+		{
+			"name": "return",
+			"scope": [
+        "disabled.keyword.control.flow.return"
+      ],
+			"settings": {
+        "foreground": "#0081cc",
+        "fontStyle": "bold italic"
 			}
 		},
 		{
@@ -98,11 +148,22 @@
 			"scope": [
         "entity.name.function",
         "meta.function-call.generic",
-        "entity.other.ng-binding-name.event"
+        "entity.other.ng-binding-name.event",
+        "support.function.powershell"
       ],
 			"settings": {
         "fontStyle": "",
 				"foreground": "#ff8844"
+			}
+		},
+		{
+			"name": "parameter",
+			"scope": [
+        "constant.other.option",
+      ],
+			"settings": {
+        "fontStyle": "",
+				"foreground": "#0081cc"
 			}
 		},
 		{
@@ -118,11 +179,19 @@
 		{
 			"name": "doc",
 			"scope": [
-        "comment.documentation",
-        "comment.block.documentation"
+        "comment.documentation.cs"
       ],
 			"settings": {
-				"foreground": "#642"
+				"foreground": "#864"
+			}
+		},
+		{
+			"name": "doc",
+			"scope": [
+        "comment.documentation.name.cs"
+      ],
+			"settings": {
+				"foreground": "#877e76"
 			}
 		},
 
@@ -140,7 +209,8 @@
         "keyword.operator",
         "punctuation",
         "meta.brace",
-        "storage.type.function.arrow"
+        "storage.type.function.arrow",
+        "entity.name.function.member.overload",
       ],
 			"settings": {
 				"foreground": "#aaaaaa"
@@ -203,14 +273,29 @@
 			"scope": "heading.1.markdown,heading.1.markdown punctuation.definition.heading",
 			"settings": {
         "fontStyle": "bold underline",
-				"foreground": "#ce6114"
+				"foreground": "#ff0000"
 			}
 		},
 		{
 			"name": "H2",
-			"scope": "heading.2.markdown",
+			"scope": "heading.2.markdown,heading.2.markdown punctuation.definition.heading",
 			"settings": {
-				"foreground": "#5488d6"
+        "fontStyle": "bold underline",
+				"foreground": "#ce6114"
+			}
+		},
+		{
+			"name": "H3",
+			"scope": "heading.3.markdown,heading.3.markdown punctuation.definition.heading",
+			"settings": {
+				"foreground": "#3b5cd1"
+			}
+		},
+		{
+			"name": "H4",
+			"scope": "heading.4.markdown,heading.4.markdown punctuation.definition.heading",
+			"settings": {
+				"foreground": "#7c9dce"
 			}
 		},
 		{
@@ -222,9 +307,12 @@
 		},
 		{
 			"name": "quote",
-			"scope": "markup.quote",
+			"scope": [
+        "markup.quote",
+        "markup.inline.raw.string"
+      ],
 			"settings": {
-				"foreground": "#7b7b7b"
+				"foreground": "#808080"
 			}
 		},
 		{
@@ -239,6 +327,38 @@
 			"scope": "markup.italic",
 			"settings": {
         "fontStyle": "italic"
+			}
+		},
+
+
+
+		{
+			"name": "css",
+			"scope": [
+        "support.type.property-name.css",
+      ],
+			"settings": {
+				"foreground": "#1ba89b"
+			}
+		},
+		{
+			"name": "css",
+			"scope": [
+        "entity.other.attribute-name.class.css",
+        "entity.name.tag.css",
+        "entity.other.attribute-name.pseudo-class.css",
+      ],
+			"settings": {
+				"foreground": "#9365a9"
+			}
+		},
+		{
+			"name": "css",
+			"scope": [
+        "support.function.misc.scss",
+      ],
+			"settings": {
+				"foreground": "#ff8844"
 			}
 		},
 
@@ -351,8 +471,8 @@
     "editorCursor.background": "#000000",
     "editorWhitespace.foreground": "#e3e4e229",
     "editorLink.activeForeground": "#4e94ce",
-    "editorIndentGuide.background": "#404040",
-    "editorIndentGuide.activeBackground": "#707070",
+    "editorIndentGuide.background1": "#404040",
+    "editorIndentGuide.activeBackground1": "#707070",
     "editorRuler.foreground": "#5a5a5a",
     "editorOverviewRuler.background": "#25252500",
     "editorOverviewRuler.border": "#7f7f7f4d",

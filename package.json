@@ -1,8 +1,8 @@
 {
-	"name": "custom-themes",
-	"displayName": "Asseri Custom Themes",
-	"description": "Custom stuff",
-	"version": "0.0.2",
+	"name": "asseri-vscode-themes",
+	"displayName": "VSCode Themes by Asseri",
+	"description": "VSCode Themes by Asseri",
+	"version": "0.0.3",
 	"publisher": "asseri",
 	"scripts": {
 		"build": "vsce package",
@@ -50,31 +50,31 @@
 		"themes": [
 			{
 				"id":"Asseri Light",
-				"label": "Asseri Light",
+				"label": "Asseri - Light",
 				"uiTheme": "vs",
 				"path": "./themes/light.json"
 			},
 			{
 				"id":"AsseriCobaltEvo",
-				"label": "Cobalt Evo",
+				"label": "Asseri - Cobalt Evo",
 				"uiTheme": "vs-dark",
 				"path": "./themes/CobaltEvo.json"
 			},
 			{
 				"id":"AsseriEnhancedMaterialEvo",
-				"label": "Enhanced Material Evo",
+				"label": "Asseri - Enhanced Material Evo",
 				"uiTheme": "vs-dark",
 				"path": "./themes/EnchancedMaterialEvo.json"
 			},
 			{
 				"id":"AsseriEnhancedSlateEvo",
-				"label": "Slate Evo",
+				"label": "Asseri - Slate Evo",
 				"uiTheme": "vs-dark",
 				"path": "./themes/SlateEvo.json"
 			},
 			{
 				"id":"AsseriDarkEvo",
-				"label": "Dark Evo",
+				"label": "Asseri - Dark Evo",
 				"uiTheme": "vs-dark",
 				"path": "./themes/DarkEvo.json"
 			}

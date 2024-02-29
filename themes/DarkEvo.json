@@ -9,9 +9,21 @@
       "fontStyle": "bold",
       "foreground":"#76f"
     },
+		"enum": {
+      "fontStyle": "bold italic",
+      "foreground":"#76f"
+    },
+		"type": {
+      "fontStyle": "bold",
+      "foreground":"#76f"
+    },
 		"interface": {
       "fontStyle": "italic",
       "foreground":"#76f"
+    },
+		"class.static": {
+      "fontStyle": "bold",
+      "foreground":"#577f96"
     },
 
 		"parameter": {
@@ -31,6 +43,26 @@
 
 	"tokenColors": [
     {
+      "name": "class",
+      "scope": [
+        "entity.name.type.cs",
+        "entity.name.type.struct.cs",
+        "entity.name.type.message.proto",
+      ],
+      "settings": {
+        "foreground": "#76f"
+      }
+    },
+    {
+      "name": "interface",
+      "scope": [
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#76f"
+      }
+    },
+    {
 			"name": "base",
 			"scope": [
         "source",
@@ -38,7 +70,8 @@
         "punctuation.support.type.property-name",
         "meta.template.expression",
         "expression.ng",
-        "punctuation.definition.list.begin.markdown"
+        "punctuation.definition.list.begin.markdown",
+        "text.xml"
       ],
 			"settings": {
         "fontStyle": "",
@@ -61,6 +94,11 @@
 		{
 			"name": "keyword",
 			"scope": [
+        "keyword.message.proto",
+        "keyword.field.type.proto",
+        "keyword.enum.proto",
+        "support.type.field.proto",
+
         "keyword.control.as",
         "keyword.control.try",
         "keyword.control.trycatch",
@@ -72,6 +110,7 @@
         "keyword.control.from",
         "keyword.control.default",
         "keyword.control.type",
+        "keyword.control.c",
         "storage.modifier",
         "keyword.type",
         "keyword.other",
@@ -89,6 +128,7 @@
         "variable.parameter.function.language.special.self.python",
         "entity.name.tag.html",
         "keyword.control.powershell",
+        "entity.name.tag.localname.xml"
       ],
 			"settings": {
         "foreground": "#0081cc"
@@ -151,7 +191,8 @@
         "entity.name.function",
         "meta.function-call.generic",
         "entity.other.ng-binding-name.event",
-        "support.function.powershell"
+        "support.function.powershell",
+        "support.function.misc"
       ],
 			"settings": {
         "fontStyle": "",
@@ -181,7 +222,8 @@
 		{
 			"name": "doc",
 			"scope": [
-        "comment.documentation.cs"
+        "comment.documentation.cs",
+        "comment.block.documentation"
       ],
 			"settings": {
 				"foreground": "#864"
@@ -212,7 +254,7 @@
         "punctuation",
         "meta.brace",
         "storage.type.function.arrow",
-        "entity.name.function.member.overload",
+        "entity.name.function.member.overload"
       ],
 			"settings": {
 				"foreground": "#aaaaaa"
@@ -242,7 +284,8 @@
 			"scope": [
         "constant.numeric",
         "keyword.other.unit",
-        "entity.other.attribute-name.html"
+        "entity.other.attribute-name.html",
+        "entity.other.attribute-name.localname.xml"
       ],
 			"settings": {
 				"foreground": "#39c8ff"
@@ -666,6 +709,9 @@
     "walkThrough.embeddedEditorBackground": "#00000050",
     "breadcrumb.activeSelectionForeground": "#e0e0e0",
     "debugExceptionWidget.background": "#333333",
-    "debugExceptionWidget.border": "#474747"
+    "debugExceptionWidget.border": "#474747",
+
+    "inlineChat.background": "#6060ff10",
+    "inlineChat.regionHighlight": "#00ff0004"
 	}
 }
